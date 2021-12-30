@@ -8,7 +8,7 @@ jobs:
     runs-on: custom-runner
     steps:
       - name: Checkout
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Build Docker
         run: |
@@ -18,7 +18,7 @@ jobs:
     runs-on: custom-runner
     steps:
       - name: Checkout
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Build Docker
         run: |
