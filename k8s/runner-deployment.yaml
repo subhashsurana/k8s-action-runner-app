@@ -1,0 +1,14 @@
+# runnerdeployment.yaml
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: k8s-runner-deployment
+  namespace: actions-runner-system
+spec:
+  replicas: 2
+  template:
+    spec:
+      repository: subhashsurana/k8s-action-runner-app
+      labels:
+        - self-custom-runner
+      env: []
