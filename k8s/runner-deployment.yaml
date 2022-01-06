@@ -11,5 +11,6 @@ spec:
       repository: subhashsurana/k8s-action-runner-app
       labels:
         - self-custom-runner
-      env: []
-      ephemeral: true
+      env:
+      - name: RUNNER_FEATURE_FLAG_EPHEMERAL
+        value: "true"
