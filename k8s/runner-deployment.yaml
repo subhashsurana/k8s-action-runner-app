@@ -9,8 +9,13 @@ spec:
   template:
     spec:
       repository: subhashsurana/k8s-action-runner-app
+      # serviceAccountName: aws-node
+      # securityContext:
+      #   fsGroup: 1000
+      imagePullPolicy: Always
+      ephemeral: true
       labels:
         - self-custom-runner
-      env:
-      - name: RUNNER_FEATURE_FLAG_EPHEMERAL
-        value: "true"
+      env: 
+        - name: RUNNER_FEATURE_FLAG_EPHEMERAL
+          value: "true"
