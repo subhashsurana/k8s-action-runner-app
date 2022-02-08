@@ -16,6 +16,6 @@ spec:
   scaleUpTriggers:
     - githubEvent:
         push:
-          amount: 1
+          amount: 5
           duration: "5m"
                   
