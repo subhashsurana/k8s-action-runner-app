@@ -14,8 +14,6 @@ spec:
   #   repositoryNames:
   #   - subhashsurana/k8s-action-runner-app
   scaleUpTriggers:
-    - githubEvent:
-        push:
-          amount: 5
-          duration: "3m"
+    - githubEvent: {}
+      duration: "30m"
                   
