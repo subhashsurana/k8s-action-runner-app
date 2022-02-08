@@ -17,5 +17,5 @@ spec:
     - githubEvent:
         push:
           amount: 5
-          duration: "5m"
+          duration: "3m"
                   
