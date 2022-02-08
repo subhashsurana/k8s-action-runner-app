@@ -11,7 +11,7 @@ spec:
       repository: subhashsurana/k8s-action-runner-app
       # serviceAccountName: aws-node
       # securityContext:
-      #   fsGroup: 1000
+      #   fsGroup: 27
       imagePullPolicy: Always
       ephemeral: true
       labels:

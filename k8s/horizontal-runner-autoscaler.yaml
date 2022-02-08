@@ -9,7 +9,13 @@ spec:
   scaleDownDelaySecondsAfterScaleOut: 300
   minReplicas: 1
   maxReplicas: 10
-  metrics:
-  - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
-    repositoryNames:
-    - subhashsurana/k8s-action-runner-app
+  # metrics:
+  # - type: TotalNumberOfQueuedAndInProgressWorkflowRuns
+  #   repositoryNames:
+  #   - subhashsurana/k8s-action-runner-app
+  scaleUpTriggers:
+    - githubEvent:
+        push:
+          amount: 1
+          duration: "5m"
+                  
