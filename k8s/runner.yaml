@@ -2,8 +2,9 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: Runner
 metadata:
-  name: self-hosted-runner
+  name: dm-next-api-runner
   namespace: actions-runner-system
 spec:
-  repository: subhashsurana/k8s-action-runner-app
+  # organization: Dealermade
+  repository: Dealermade/dm-next-api
   env: []
